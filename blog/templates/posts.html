@@ -10,7 +10,8 @@
     <h3>{{ post.date }}</h3>
     <p>{{ post.description }}</p>
     <img src="{{post.image.url}}" alt="{{post.title}}" width="300px">
-    <a href="{% url 'blog:post_detail' post.id %}">{{post.title}}</a>
+    <br>
+    <a href="{% url 'blog:post_detail' post.id %}" class="btn btn-primary mt-2">{{post.title}}</a>
     
 {% endfor %}
 
